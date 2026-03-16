@@ -130,7 +130,6 @@ def q17():
     f = (9 * c + 160 / 5)
     print ("A temperatura em Fahreheit é:" , f)
 
-
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
 #    12 km por litro de combustível. O programa deverá ler o tempo
@@ -143,6 +142,13 @@ def q17():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+
+#19. Faça um programa que calcule o valor de uma prestação em atraso.
+#    Para isso, o programa deve ler o valor da prestação vencida, a
+#    taxa periódica de juros e o período de atraso. Ao final, o
+#    programa deve imprimir o valor da prestação atrasada, o período
+#    de atraso, os juros que serão cobrados pelo período de atraso, o
+#    valor da prestação acrescido dos juros. Considere juros simples.
 def q18():
     valor_prestacao = float(input("Digite o valor da prestacão vencida: "))
     taxa_juros = float(input("Digite a taxa de juros(%): "))
@@ -152,17 +158,15 @@ def q18():
     print("Valor da prestacao:", valor_prestacao)
     print("Periodo de atraso", periodo)
     print("Valor total com juros:", valor_total)
-     
-#19. Faça um programa que calcule o valor de uma prestação em atraso.
-#    Para isso, o programa deve ler o valor da prestação vencida, a
-#    taxa periódica de juros e o período de atraso. Ao final, o
-#    programa deve imprimir o valor da prestação atrasada, o período
-#    de atraso, os juros que serão cobrados pelo período de atraso, o
-#    valor da prestação acrescido dos juros. Considere juros simples.
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
-
+def q19():
+    dolar = float("input("Digite o valor em dolar (US$): "))
+    cotacao = float(input("Digite a cotacao do dolar: "))
+    real = dolar * cotacao
+    print ("valor em reais (R$):", real)
+    
 questao = input('Digite a questão a ser executada: ')
 eval(f'q{questao}()')  # eval transforma uma string (texto) em comando python
