@@ -114,12 +114,22 @@ def q15():
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def q16():
+    salario_atual = float(input("Digite o salário atual do funcionário: "))
+    percentual = float(input("Digite o percentual de reajuste (%): "))
+    reajuste = salario_atual * (percentual / 100)
+    print("Novo salário após o reajuste: R$", novo_salario)
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
 #    F = (9 x C + 160) / 5
+def q17():
+    c = float(input("Digite a temperatura em graus centrígrados: "))
+    f = (9 * c + 160 / 5)
+    print ("A temperatura em Fahreheit é:" , f)
+
 
 #18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
@@ -133,7 +143,16 @@ def q15():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
-
+def q18():
+    valor_prestacao = float(input("Digite o valor da prestacão vencida: "))
+    taxa_juros = float(input("Digite a taxa de juros(%): "))
+    periodo = int(input("Digite o periodo de atraso: "))
+    juros = valor_prestacao * (taxa_juros / 100) * periodo
+    valor_total = prestacao + juros 
+    print("Valor da prestacao:", valor_prestacao)
+    print("Periodo de atraso", periodo)
+    print("Valor total com juros:", valor_total)
+     
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
 #    taxa periódica de juros e o período de atraso. Ao final, o
