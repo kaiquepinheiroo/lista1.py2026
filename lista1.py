@@ -142,6 +142,13 @@ def q17():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def q19():
+    tempo = float(input("Digite o tempo de viagem (em horas): "))
+    velocidade = float(input("Digite a velocidade média (em km/h): "))
+    distancia = tempo * velocidade
+    litros = distancia / 12
+    print(f"Distância percorrida: {distancia:.2f} km")
+    print(f"Litros de combustível consumidos: {litros:.2f} litros")
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
